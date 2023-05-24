@@ -1,0 +1,175 @@
+:root{
+  --gutter: 15px;
+  --accent: pink;
+  --light: white;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.form-control{
+  resize: none;
+}
+audio, video{
+  width: 100%;
+}
+header{
+  position: relative;
+  z-index: 1;
+  background: var(--accent);
+}
+header a{
+  display: flex;
+  text-decoration: none;
+  color: var(--light);
+  padding: var(--gutter);
+  justify-content: center;
+}
+header a:hover{
+  text-decoration: none;
+  color: var(--light);
+  background: rgb(0,0,0,0.1);
+}
+header a img{
+  padding: 0 var(--gutter);
+}
+footer{
+  text-align: center;
+}
+.container{
+  box-shadow: 0 3px 6px var(--accent);
+  text-align: center;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: #fff;
+}
+body{
+  background: #dddcdc;
+  overflow-x:hidden;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style-type: none;
+  padding: var(--gutter) 0;
+}
+h5{
+  padding: var(--gutter) 0;
+  margin: 0;
+}
+.footer-span{
+  padding: var(--gutter) 0;
+  display: block;
+}
+.title{
+  box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.54);
+  padding: var(--gutter) 0;
+  border-radius: 10em;
+}
+a{
+  color: grey;
+}
+.dialog-ul, .chat-ul{
+  overflow: auto;
+  height: 500px;
+}
+.profile-info-span{
+  color: grey;
+}
+.avatar-middle{
+  max-width: 128px;
+  height: 32px;
+  padding: 0 var(--gutter);
+}
+.avatar-big{
+  height: 128px;
+  max-width: 256px;
+}
+.comment{
+  padding: var(--gutter) 0;
+  -webkit-box-shadow: inset 1px -77px 70px -64px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 1px -77px 70px -64px rgba(0,0,0,0.75);
+  box-shadow: inset 1px -77px 70px -64px rgba(0,0,0,0.75);
+}
+.gallery-items{
+  position: relative;
+  padding: var(--gutter) 0;
+}
+.gallery-items::after{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: 'Смотреть';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: rgba(23, 24, 24, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.gallery-items:hover::after{
+  opacity: 1;
+
+}
+.gallery-item{
+  height: 64px;
+}
+.edit-status-span{
+  user-select: none;
+  cursor: pointer;
+}
+.carousel-item img{
+  max-height: 512px;
+  max-width: 100%;
+}
+.carousel-inner{
+  background: rgba(0, 0, 0, 0.3);
+}
+.poster{
+  height: 64px;
+}
+.avatar-main{
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+}
+.user-avatar{
+  position: relative;
+}
+.edit-avatar-items{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgba(23, 24, 24, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.edit-avatar-items:hover{
+  opacity: 1;
+}
+.edit-avatar-items a{
+  z-index: 2;
+  color: white;
+  padding: 0 var(--gutter);
+}
+.avatar-pos{
+  display: inline-block;
+  padding: 0 var(--gutter);
+  border-radius: var(--gutter);
+  border: 2px solid green;
+  color: green;
+}
+.icon-sm{
+  height: 16px;
+}
